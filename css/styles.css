@@ -63,6 +63,22 @@ p {
     display: flex;
     gap: 40px;
 }
+.nav-link.active{
+    color: #404BBF;
+    position: relative;
+
+}
+.active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color:  #404BBF;
+        border-radius: 2px;
+        height: 4px;
+        width: 100%;
+        bottom: -1px;
+
+}
 .list-address{
     display: flex;
     gap: 40px;
@@ -93,6 +109,7 @@ letter-spacing: 0.02em;
 color:var(--secondary-text-color);
 padding: 24px 0;
 display: block;
+transition: color var(--function-direction);
 }
 
 .nav-link:hover,
@@ -111,6 +128,7 @@ letter-spacing: 0.02em;
 color:var(--contact-text-color);
 padding: 24px 0;
 display: block;
+transition: color var(--function-direction);
 }
 .contact-link:hover,
 .contact-link:focus{
@@ -158,6 +176,7 @@ letter-spacing: 0.04em;
 background-color: var(--bg-button);
 color: var(--hero-titlle-color);
 cursor: pointer;
+transition: background-color var(--function-direction);
 }
 .hero-btn:hover,
 .hero-btn:focus{
@@ -293,6 +312,7 @@ color: var(--primary-text-color);
     justify-content: center;
     align-items: center;
     background-color: #4D5AE5;
+ transition: background-color var(--function-direction);
     
 }
 .social-link:hover,
@@ -326,6 +346,7 @@ color: var(--primary-text-color);
     justify-content: center;
     align-items: center;
     color: #8E8F99;
+    transition: color var(--function-direction), border-color var(--function-direction);
 
 }
 .customers-icon {
@@ -393,6 +414,7 @@ color:var(--logo-footer);
     justify-content: center;
     align-items: center;
    background-color:#4D5AE5;
+   transition:background-color var(--function-direction) ;
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus{
@@ -497,10 +519,12 @@ color:var(--primary-text-color);
         min-height: 576px;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, 50%)scale(1);
+        transform: translate(-50%, -50%) scale(1);
         background: #FCFCFC;
         border-radius: 4px; 
         transition: transform var(--function-direction);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
 
   
 }
