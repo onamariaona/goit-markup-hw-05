@@ -452,7 +452,7 @@ letter-spacing: 0.04em;
 color:var(--bg-button);
 cursor: pointer;
  background-color:var(--bg-team) ;
- transition:box-shadow var(--function-direction), color var(--function-direction), background-color var(--function-direction), border var(--function-direction) ;
+ transition: box-shadow var(--function-direction), color var(--function-direction), background-color var(--function-direction), border-color var(--function-direction) ;
 
 }
 .portfolio-btn:hover,
