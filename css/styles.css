@@ -346,7 +346,7 @@ color: var(--primary-text-color);
     justify-content: center;
     align-items: center;
     color: #8E8F99;
-    transition: color var(--function-direction), border-color var(--function-direction);
+    transition: border-color var(--function-direction), color var(--function-direction);
 
 }
 .customers-icon {
