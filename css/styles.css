@@ -452,6 +452,7 @@ letter-spacing: 0.04em;
 color:var(--bg-button);
 cursor: pointer;
  background-color:var(--bg-team) ;
+ transition:box-shadow var(--function-direction), color var(--function-direction), background-color var(--function-direction), border var(--function-direction) ;
 
 }
 .portfolio-btn:hover,
@@ -470,6 +471,7 @@ cursor: pointer;
 }
 .card-link{
     display: block;
+    transition: box-shadow var(--function-direction);
 }
 .card-link:hover,
 .card-link:focus{
@@ -477,6 +479,31 @@ cursor: pointer;
 }
 .cart-item{
     width: calc((100% - 48px) / 3); 
+
+}
+.overlay {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.portfolio-cart-text {
+    position: absolute;
+    top: 0;
+        height: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #F4F4FD;
+        padding: 40px 32px;
+        background-color: #4D5AE5;
+transform: translateY(100%);
+transition: transform var(--function-direction);
+
+}
+.card-link:hover .portfolio-cart-text,
+.card-link:focus .portfolio-cart-text{
+    transform: translateY(0%);
 
 }
 .portfolio-item-content{
